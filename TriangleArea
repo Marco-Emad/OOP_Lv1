@@ -1,0 +1,18 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter length of the sides ");
+        double sides = (double)input.nextInt();
+        double area = Math.pow(3.0D, 0.5D) / 4.0D * Math.pow(sides, 2.0D);
+        double vol = area * sides;
+        System.out.println("Area is " + area);
+        System.out.println("The volume of the Triangular prism is " + vol);
+    }
+}
